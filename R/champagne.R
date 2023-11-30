@@ -5,12 +5,12 @@
 #' @param x A numeric vector.
 #' @return A numeric vector.
 #' @examples
-#' champagne(0)
-#' champagne(0.5)
-#' champagne(10)
-#' champagne(15)
-#' champagne(20)
-#' champagne(21)
+#' g(0)
+#' g(0.5)
+#' g(10)
+#' g(15)
+#' g(20)
+#' g(21)
 #' @export
 g <- function(x) {
   if (x < 0) {
@@ -119,12 +119,12 @@ f5 <- function(x) {
 #' @param x A numeric vector.
 #' @return A numeric vector.
 #' @examples
-#' f6(0)
-#' f6(0.5)
-#' f6(10)
-#' f6(15)
-#' f6(20)
-#' f6(21)
+#' f(0)
+#' f(0.5)
+#' f(10)
+#' f(15)
+#' f(20)
+#' f(21)
 #' @export
 f <- function(x) {
   structure(
@@ -141,10 +141,11 @@ f <- function(x) {
 #' @param from A numeric value.
 #' @param to A numeric value.
 #' @param ... Additional arguments passed to `curve()`.
+#' @importFrom graphics curve
 #' @examples
 #' champagne <- f(seq(0, 20, by = 0.01))
 #' plot(champagne, from = 0, to = 20)
 #' @export
 plot.champagne <- function(x, from = 0, to = 20, ...) {
-  curve(f, from = from, to = to, ...)
+  graphics::curve(f, from = from, to = to, ...)
 }
