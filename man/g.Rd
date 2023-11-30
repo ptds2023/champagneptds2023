@@ -17,12 +17,12 @@ A function that represents the side cut of half of the Champagne glass placed ho
 \deqn{f(x) = \begin{cases} 15 & 0 \leq x < 0.5 \\ 2 & 0.5 \leq x < 10 \\ 8 \log_2(|x - 9|) + 2 & 10 \leq x < 15 \\ 8 \log_2(6) + 2 & 15 \leq x \leq 20 \\ 0 & \text{otherwise} \end{cases}}
 }
 \examples{
-champagne(0)
-champagne(0.5)
-champagne(10)
-champagne(15)
-champagne(20)
-champagne(21)
+g(0)
+g(0.5)
+g(10)
+g(15)
+g(20)
+g(21)
 }
 \author{
 samorso

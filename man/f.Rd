@@ -16,12 +16,12 @@ A numeric vector.
 A vectorized version of the Champagne glass function using indicator functions and `structure()`.
 }
 \examples{
-f6(0)
-f6(0.5)
-f6(10)
-f6(15)
-f6(20)
-f6(21)
+f(0)
+f(0.5)
+f(10)
+f(15)
+f(20)
+f(21)
 }
 \author{
 samorso
